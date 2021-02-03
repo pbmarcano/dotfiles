@@ -1,0 +1,10 @@
+# vi
+*~
+*.sw[nop]
+
+# Mac
+.DS_Store
+
+# Xcode
+*.xcuserstate
+

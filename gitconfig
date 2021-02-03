@@ -1,0 +1,5 @@
+[user]
+	name = Peter Marcano
+	email = pbmarcano91@gmail.com
+[core]
+	excludesFile = /Users/marcano/.gitignore
