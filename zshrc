@@ -93,3 +93,5 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias tmux="tmux -2"
+
+. /usr/local/opt/asdf/asdf.sh
