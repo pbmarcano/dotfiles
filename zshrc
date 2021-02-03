@@ -58,7 +58,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( ruby rails git tmux )
+plugins=( asdf ruby rails git tmux )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,5 +93,3 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias tmux="tmux -2"
-
-. /usr/local/opt/asdf/asdf.sh
