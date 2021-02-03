@@ -85,9 +85,6 @@ nmap <silent> <Leader>et :vsplit ~/.tmux.conf<CR>
 nmap <Leader>sv :source $MYVIMRC<CR>
 nmap <Leader>rm :vs README.md<CR>
 
-nmap <Leader>bt :!npm run build<CR>
-nmap <Leader>em :!elm make src/Main.elm --output main.js<CR>
-
 " no more recording
 map q <Nop>
 
