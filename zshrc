@@ -7,7 +7,8 @@ export ZSH=/Users/marcano/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+PROMPT='%F{26}%n%f %F{39}%B%~%b%f %# '
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -55,12 +56,18 @@ ZSH_THEME="robbyrussell"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( asdf ruby rails git tmux )
+plugins=( asdf ruby rails git )
 
 source $ZSH/oh-my-zsh.sh
+
+# tmux 
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'
 
 # User configuration
 
@@ -91,5 +98,8 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+export PATH="$HOME/.bin:$PATH"
 
-alias tmux="tmux -2"
+# recommended by brew doctor
+export PATH="/opt/homebrew/bin:$PATH"
