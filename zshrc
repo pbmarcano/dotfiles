@@ -8,7 +8,7 @@ export ZSH=/Users/marcano/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-PROMPT='%F{26}%n%f %F{39}%B%~%b%f %# '
+PROMPT='%F{39}%B%~%b%f %# '
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -57,7 +57,7 @@ PROMPT='%F{26}%n%f %F{39}%B%~%b%f %# '
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( asdf ruby rails git )
+plugins=( )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,3 +103,5 @@ export PATH="$HOME/.bin:$PATH"
 
 # recommended by brew doctor
 export PATH="/opt/homebrew/bin:$PATH"
+
+. /opt/homebrew/opt/asdf/asdf.sh
