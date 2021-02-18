@@ -105,3 +105,5 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
 . /opt/homebrew/opt/asdf/asdf.sh
+
+bindkey -v
