@@ -1,5 +1,9 @@
 PROMPT='%F{39}%B%~%b%f %# '
 
+for zsh_source in $HOME/.zsh/configs/*.zsh; do
+  source $zsh_source
+done
+
 # tmux 
 alias ta='tmux attach -t'
 alias tad='tmux attach -d -t'
